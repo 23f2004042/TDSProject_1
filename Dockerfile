@@ -17,7 +17,7 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     sqlite3 libsqlite3-dev \
-    curl git npm \
+    curl git npm ffmpeg \
     && rm -rf /var/lib/apt/lists/* 
 
 COPY requirements.txt .
